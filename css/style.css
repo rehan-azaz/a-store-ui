@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+ul,li {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.btn-primary {
+
+}
+.div {
+    margin: 0;
+    padding: 0;
+}
+.fs-6 {
+    font-size: 12px!important;
+}
+.fs-4 {
+    font-size: 14px!important;
+}
+
+.fs-5 {
+    font-size: 13px!important;
+    font-weight: 500;
+}
+.border-light {
+    border-color: #bbcdee;
+}
+.text-light {
+    color: #bbcdee;
+}
+
+.bg-light {
+    background-color: #f8fafe;
+}
+.search-container {
+    display: inline-flex;
+    flex: 1 1 300px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.btn-sm {
+    padding: 2px 5px;
+    border: 1px solid #bbcdee;
+    font-size: 14px;
+    color: #bbcdee;
+}
+.btn-sm:hover {
+    color: #bbcdee;
+}
+.fa-search {
+    padding: 10px!important;
+}
+.search-box {
+    border: 0;
+    padding: 5px;
+    flex: 1;
+}
+.products {
+    text-align: center;
+}
+.products li {
+    width: 140px;
+    height: 165px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.product li:hover, .products li:active {
+    border: 1px solid #bbcdee;
+}
+p {
+    font-size: 14px;
+}
+.list-inline {
+    margin: 0;
+    padding: 0;
+}
+
+.list-inline-item {
+    margin: 0;
+    padding: 0;
+}
+
+.list-inline-item img {
+    width: 60px;
+    height: 60px;
+}
+.hero {
+    /*background-image: url("../img/Mask-Group-4.png");*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 600px;
+}
+h1 {
+    font-weight: 900;
+}
+h4 {
+    font-weight: 900;
+}
+.btn-group button{
+    border-radius: 5px!important;
+}
+button.btn.btn-sm {
+    min-width: 20px;
+    padding-block: 0px;
+    margin-left: 5px!important;
+}
+.hero.d-flex button {
+    min-width: 140px;
+}
+.hero.d-flex button:hover {
+    background-color: skyblue;
+    color: white;
+    border-color: skyblue;
+}
+
+.lft-category {
+    background-image: url("../img/Mask-Group-5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+
+}
+.rgt-category {
+    background-image: url("../img/Mask-Group-6.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+
+}
+.card-body {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+
+.mr-2 {
+    margin-right: 8px;
+}
+@media (min-width: 576px) {
+    div {
+        justify-content: center;
+    }
+}

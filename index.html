@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoreFront</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="">
+        <div class="container-fluid mt-2">
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-start">
+                    <div class="col-md-2 col-sm-6">
+                        <button class="btn btn-sm rounded-3 bg-light ">
+                            <i class="fas fa-chevron-down fs-6 "></i>
+                        </button>
+                    </div>
+                    <div class="col-md-10 col-sm-8 fs-6 fw-bold">
+                        <ul class="list-inline">
+                            <li class="list-inline-item ">
+                                <a href="" class="text-decoration-none text-secondary mx-2">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="text-decoration-none text-secondary mx-2">
+                                    All Products
+                                </a>
+                            </li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="col-md-12 fs-6">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="" class="text-decoration-none mx-2 text-secondary">
+                                    <i class="fa fa-headphones-alt text-primary"></i>
+                                    <span>
+                                        Contact Us
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="text-decoration-none mx-2 text-secondary">
+                                    <i class="fa fa-phone-alt text-primary"></i>
+                                    <span>
+                                        Phone
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item ">
+                                <a href="" class="text-decoration-none mx-2 text-secondary">
+                                    <span>
+                                        Track Order
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="text-decoration-none mx-2 text-secondary">
+                                    <span>
+                                        Sign In<span class="text-primary"> or </span>Register
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <select class="border border-light text-secondary">
+                                    <option value="all-categories">USA, Dollar</option>
+                                    <option value="men">Pakistan, Rupee</option>
+                                    <option value="women">Canada, Dollar</option>
+                                    <option value="glasses">China, Yuan</option>
+                                    <option value="accessories">England, Pound</option>
+                                    <option value="gift-card">Germany, Euro</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mt-4">
+                <div class="row justify-content-start ">
+                    <div class="col-md-3 col-sm-12 text-center my-2 ">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+                            <g data-name="Сгруппировать 5609">
+                                <g data-name="Сгруппировать 883">
+                                    <path data-name="Контур 1984" d="M15 15v15A15 15 0 010 15h15z" fill="#3680fb"/>
+                                    <path data-name="Контур 1985" d="M15 15H0V0a15 15 0 0115 15z" fill="#fd3a6a"/>
+                                    <path data-name="Контур 1986" d="M30 15a15 15 0 01-15 15 15 15 0 0115-15z" fill="#69e5f5"/>
+                                    <path data-name="Контур 1987" d="M30 15A15 15 0 0115 0a15 15 0 0115 15z" fill="#fec42d"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                        <span class="text-center mx-3 fw-bolder">
+                            Store A
+                        </span>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="search-container d-flex">
+                            <i class="fa fa-search p-1"></i>
+                            <input type="text" placeholder="I'm Shopping for" class="search-box rounded input-group ">
+                            <select class="border border-light">
+                                <option value="all-categories">All Categories</option>
+                                <option value="men">Men</option>
+                                <option value="women">Women</option>
+                                <option value="glasses">Glasses</option>
+                                <option value="accessories">Accessories</option>
+                                <option value="gift-card">Gift Card</option>
+                                <option value="new-arrivals">New Arrivals</option>
+                                <option value="clearance">Clearance</option>
+                                <option value="flash-sale">Flash Sale</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center rounded">
+                        <img src="img/heart.svg" alt="" class="mx-3">
+                        <img src="img/cart.svg" alt="" class="mx-3">
+                    </div>
+                </div>
+            </div>
+                <div class="container-fluid mt-3">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="products">
+                                <ul>
+                                    <li class=" text-center rounded-3 border border-light">
+                                        <img src="img/drone1.png" alt="" >
+                                        <span>
+                                    Drone Accessories
+                                </span>
+                                    </li>
+                                    <li class="text-center rounded-3 border border-light">
+                                        <img src="img/watch1.png" alt="">
+                                        <span>
+                                    Smart Watch
+                                </span>
+                                    </li>
+                                    <li class=" text-center rounded-3 border border-light">
+                                        <img src="img/gadget1.png" alt="">
+                                        <span>
+                                    Cool Gadget
+                                </span>
+                                    </li>
+                                    <li class="text-center rounded-3 border border-light">
+                                        <img src="img/phone-accessories1.png" alt="">
+                                        <span>
+                                    Phone Accessories
+                                </span>
+                                    </li>
+                                    <li class="text-center rounded-3 border border-light">
+                                        <img src="img/pets1.png" alt="">
+                                        <span>
+                                    Pets
+                                </span>
+                                    </li>
+                                    <li class="text-center rounded-3 border border-light">
+                                        <img src="img/kitchen1.png" alt="">
+                                        <span>
+                                    Kitchen Accessories
+                                </span>
+                                    </li>
+                                    <li class="text-center rounded-3 border border-light">
+                                        <img src="img/outdoor-gym1.png" alt="">
+                                        <span>
+                                    Outdoor Equipments
+                                </span>
+                                    </li>
+                                    <li class="list-inline-item text-center rounded-3 border border-light">
+                                        <a href="" class="text-secondary text-decoration-none mx-1">
+                                            <img src="img/grid.svg" alt="">
+                                            <p class="">
+                                                Show More
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="mt-1" id="slider">
+        <div class="hero d-flex">
+            <p class="text-secondary fs-4 fw-bold">Special Offer</p>
+            <h1 class="text-dark mb-0 mt-2">
+                FINAL CLEARANCE
+            </h1>
+            <h1 class="mb-0 mt-2">Upto <span class="text-primary">80%</span> Off</h1>
+            <div class="btn-group my-5" role="group" >
+                <button type="button" class="btn btn-light fs-4 fw-bolder mx-3 ">Shop Women</button>
+                <button type="button" class="btn btn-light fs-4 fw-bolder mx-3">Shop Men</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="lft-category rounded-3">
+                    <div class="m-4 p-5">
+                        <p class="mb-0 fs-4 fw-bolder">
+                            The Accessories Update
+                        </p>
+                        <h1 class="text-white mb-0 text-uppercase fs-1">
+                            Accessories
+                        </h1>
+                        <h1 class="text-danger mb-0 fs-1">
+                            2021
+                        </h1>
+                        <button class="btn btn-md btn-primary my-4 px-4">
+                            Shop Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="rgt-category rounded-3">
+                    <div class="m-4 p-5">
+                        <p class="mb-0 fs-4 fw-bold">
+                            Ready to
+                        </p>
+                        <h3 class="mb-0 fs-1 fw-bolder">Use <span class="text-danger">Unique</span></h3>
+
+                        <h3 class="mb-0 fs-1 fw-bolder">Demos</h3>
+
+                        <button class="btn btn-md btn-primary my-4 px-4">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="mt-5">
+       <div class="container">
+           <div class="row mb-4 pt-4 ">
+               <div class="text-center">
+                   <h4 class="text-uppercase ">Trending</h4>
+                   <p class="text-secondary ">Top views in this week</p>
+               </div>
+               <div class="d-flex m-4 justify-content-center">
+                   <div class="col-lg-2 col-sm-2 m-2">
+                       <div class="card border-light">
+                           <img src="./img/shoe-blue-md.png" class="card-img-top rounded-3" alt="">
+                           <div class="card-body mt-3">
+                               <span class="text-uppercase text-secondary">Levis</span>
+                               <span class="float-end">
+                                   <img src="./img/star-filled.svg" alt="">
+                                   <img src="./img/star-filled.svg" alt="">
+                                   <img src="./img/star-filled.svg" alt="">
+                                   <img src="./img/star-empty.svg" alt="">
+                                   <img src="./img/star-empty.svg" alt="">
+                               </span>
+                               <p class="text-capitalize">Faxon canvas low-top Sneaker</p>
+                               <p class="fw-bold">$240.00</p>
+                               <img src="./img/shoes-blue-sm.png" alt="">
+                               <img src="./img/shoes-gray-sm.png" alt="">
+                               <br>
+                               <div class="btn-group mt-1">
+                                   <button class="btn btn-sm btn-light">
+                                       S
+                                   </button>
+                                   <button class="btn btn-sm btn-primary">
+                                       M
+                                   </button>
+                                   <button class="btn btn-sm btn-light">
+                                       L
+                                   </button>
+                               </div>
+                               <div class="text-center mt-5">
+                                   <button class="btn btn-md btn-primary text-uppercase rounded-3 w-100 d-block">
+                                       Add to cart
+                                   </button>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-2 col-sm-2 m-2">
+                       <div class="card border-light">
+                           <img src="./img/cap-green-md.png" class="card-img-top rounded-3" alt="">
+                           <div class="card-body mt-3">
+                               <span class="text-uppercase text-secondary">Levis</span>
+                               <span class="float-end">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                           </span>
+                               <p class="text-capitalize">Faxon canvas low-top Sneaker</p>
+                               <p class="fw-bold">$240.00</p>
+                               <img src="./img/cap-green-outline-sm.png" alt="">
+                               <img src="./img/cap-red-sm.png" alt="">
+                               <br>
+                               <div class="btn-group mt-1">
+                                   <button class="btn btn-sm  btn-light">
+                                       S
+                                   </button>
+                                   <button class="btn btn-sm  btn-primary">
+                                       M
+                                   </button>
+
+                               </div>
+                               <div class="text-center mt-5">
+                                   <button class="btn btn-md btn-primary text-uppercase rounded-3 w-100 d-block">
+                                       Add to cart
+                                   </button>
+                               </div>
+
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-2 m-2">
+                   <div class="card border-light">
+                       <img src="./img/glasses-md.png" class="card-img-top rounded-3" alt="">
+                       <div class="card-body mt-3">
+                           <span class="text-uppercase text-secondary">Levis</span>
+                           <span class="float-end">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                           </span>
+                           <p class="text-capitalize">Faxon canvas low-top Sneaker</p>
+                           <p class="fw-bold">$240.00</p>
+                           <img src="./img/glasses-outline-sm.png" alt="">
+                           <img src="./img/glasses-tilted-sm.png" alt="">
+                           <br>
+                           <div class="btn-group mt-1">
+
+
+                           </div>
+
+                           <div class="text-center mt-5">
+                               <button class="btn btn-md btn-primary text-uppercase rounded-3 w-100 d-block">
+                                   Add to cart
+                               </button>
+                           </div>
+
+                       </div>
+                   </div>
+                </div>
+                <div class="col-md-2 m-2">
+                   <div class="card border-light">
+                       <img src="./img/heal-md.png" class="card-img-top rounded-3" alt="">
+                       <div class="card-body mt-3">
+                           <span class="text-uppercase text-secondary">Levis</span>
+                           <span class="float-end">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                           </span>
+                           <p class="text-capitalize">Faxon canvas low-top Sneaker</p>
+                           <p class="fw-bold">$240.00</p>
+                           <img src="./img/heal-outline-sm.png" alt="">
+                           <br>
+                           <div class="btn-group mt-1">
+                               <button class="btn btn-sm btn-light">
+                                   7
+                               </button>
+                               <button class="btn btn-sm btn-primary">
+                                   8
+                               </button>
+                               <button class="btn btn-sm btn-light">
+                                   9
+                               </button>
+                           </div>
+                           <div class="text-center mt-5">
+                               <button class="btn btn-md btn-primary text-uppercase rounded-3 w-100 d-block">
+                                   Add to cart
+                               </button>
+                           </div>
+
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-2 m-2">
+                   <div class="card border-light">
+                       <img src="./img/shirt-md.png" class="card-img-top rounded-3" alt="">
+                       <div class="card-body mt-3">
+                           <span class="text-uppercase text-secondary">Levis</span>
+                           <span class="float-end">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                           </span>
+                           <p class="text-capitalize">Faxon canvas low-top Sneaker</p>
+                           <p class="fw-bold">$240.00</p>
+                           <img src="./img/shirt-outline-sm.png" alt="">
+                           <br>
+                           <div class="btn-group mt-1">
+                               <button class="btn btn-sm btn-light">
+                                   S
+                               </button>
+                               <button class="btn btn-sm btn-primary">
+                                   M
+                               </button>
+                               <button class="btn btn-sm btn-light">
+                                   L
+                               </button>
+                           </div>
+                           <div class="text-center mt-5">
+                               <button class="btn btn-md btn-primary text-uppercase rounded-3 w-100 d-block">
+                                   Add to cart
+                               </button>
+                           </div>
+
+                       </div>
+                   </div>
+               </div>
+               </div>
+           </div>
+       </div>
+    </section>
+    <section class="mt-5">
+        <div class="container">
+            <div class="row mb-4 pt-4 ">
+                <div class="text-center">
+                    <h4 class="text-uppercase ">Flash Sale</h4>
+                    <p class="text-secondary ">Best Products on discount</p>
+                </div>
+                <div class="d-flex m-4 justify-content-center">
+                    <div class="col-lg-2 m-2">
+                        <div class="card border-light">
+                            <img src="./img/shoe-blue-md.png" class="card-img-top rounded-3" alt="">
+                            <div class="card-body mt-3">
+                                <span class="text-uppercase text-secondary">Levis</span>
+                                <span class="float-end">
+                                   <img src="./img/star-filled.svg" alt="">
+                                   <img src="./img/star-filled.svg" alt="">
+                                   <img src="./img/star-filled.svg" alt="">
+                                   <img src="./img/star-empty.svg" alt="">
+                                   <img src="./img/star-empty.svg" alt="">
+                               </span>
+                                <p class="text-capitalize">Faxon canvas low-top Sneaker</p>
+                                <p class="fw-bold">$240.00</p>
+                                <img src="./img/shoes-blue-sm.png" alt="">
+                                <img src="./img/shoes-gray-sm.png" alt="">
+                                <br>
+                                <div class="btn-group mt-1">
+                                    <button class="btn btn-sm btn-light">
+                                        S
+                                    </button>
+                                    <button class="btn btn-sm btn-primary">
+                                        M
+                                    </button>
+                                    <button class="btn btn-sm btn-light">
+                                        L
+                                    </button>
+                                </div>
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-md btn-primary text-uppercase rounded-3 w-100 d-block">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="card border-light">
+                    <img src="./img/shoe-blue-md.png" class="card-img-top rounded-3" alt="">
+                    <div class="card-body mt-3">
+                        <span class="text-uppercase text-secondary">Levis</span>
+                        <span class="float-end">
+                                   <img src="./img/star-filled.svg" alt="">
+                                   <img src="./img/star-filled.svg" alt="">
+                                   <img src="./img/star-filled.svg" alt="">
+                                   <img src="./img/star-empty.svg" alt="">
+                                   <img src="./img/star-empty.svg" alt="">
+                               </span>
+                        <p class="text-capitalize">Faxon canvas low-top Sneaker</p>
+                        <p class="fw-bold">$240.00</p>
+                        <img src="./img/shoes-blue-sm.png" alt="">
+                        <img src="./img/shoes-gray-sm.png" alt="">
+                        <br>
+                        <div class="btn-group mt-1">
+                            <button class="btn btn-sm btn-light">
+                                S
+                            </button>
+                            <button class="btn btn-sm btn-primary">
+                                M
+                            </button>
+                            <button class="btn btn-sm btn-light">
+                                L
+                            </button>
+                        </div>
+                        <div class="text-center mt-5">
+                            <button class="btn btn-md btn-primary text-uppercase rounded-3 w-100 d-block">
+                                Add to cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                    <div class="col-md-2 m-2">
+                        <div class="card border-light">
+                            <img src="./img/cap-green-md.png" class="card-img-top rounded-3" alt="">
+                            <div class="card-body mt-3">
+                                <span class="text-uppercase text-secondary">Levis</span>
+                                <span class="float-end">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                           </span>
+                                <p class="text-capitalize">Faxon canvas low-top Sneaker</p>
+                                <p class="fw-bold">$240.00</p>
+                                <img src="./img/cap-green-outline-sm.png" alt="">
+                                <img src="./img/cap-red-sm.png" alt="">
+                                <br>
+                                <div class="btn-group mt-1">
+                                    <button class="btn btn-sm  btn-light">
+                                        S
+                                    </button>
+                                    <button class="btn btn-sm  btn-primary">
+                                        M
+                                    </button>
+
+                                </div>
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-md btn-primary text-uppercase rounded-3 w-100 d-block    ">
+                                        Add to cart
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 m-2">
+                        <div class="card border-light">
+                            <img src="./img/glasses-md.png" class="card-img-top rounded-3" alt="">
+                            <div class="card-body mt-3">
+                                <span class="text-uppercase text-secondary">Levis</span>
+                                <span class="float-end">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                           </span>
+                                <p class="text-capitalize">Faxon canvas low-top Sneaker</p>
+                                <p class="fw-bold">$240.00</p>
+                                <img src="./img/glasses-outline-sm.png" alt="">
+                                <img src="./img/glasses-tilted-sm.png" alt="">
+                                <br>
+                                <div class="btn-group mt-1">
+
+
+                                </div>
+
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-md btn-primary text-uppercase rounded-3 w-100 d-block">
+                                        Add to cart
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 m-2">
+                        <div class="card border-light">
+                            <img src="./img/heal-md.png" class="card-img-top rounded-3" alt="">
+                            <div class="card-body mt-3">
+                                <span class="text-uppercase text-secondary">Levis</span>
+                                <span class="float-end">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                           </span>
+                                <p class="text-capitalize">Faxon canvas low-top Sneaker</p>
+                                <p class="fw-bold">$240.00</p>
+                                <img src="./img/heal-outline-sm.png" alt="">
+                                <br>
+                                <div class="btn-group mt-1">
+                                    <button class="btn btn-sm btn-light">
+                                        7
+                                    </button>
+                                    <button class="btn btn-sm btn-primary">
+                                        8
+                                    </button>
+                                    <button class="btn btn-sm btn-light">
+                                        9
+                                    </button>
+                                </div>
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-md btn-primary text-uppercase rounded-3 w-100 d-block">
+                                        Add to cart
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 m-2">
+                        <div class="card border-light">
+                            <img src="./img/shirt-md.png" class="card-img-top rounded-3" alt="">
+                            <div class="card-body mt-3">
+                                <span class="text-uppercase text-secondary">Levis</span>
+                                <span class="float-end">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                           </span>
+                                <p class="text-capitalize">Faxon canvas low-top Sneaker</p>
+                                <p class="fw-bold">$240.00</p>
+                                <img src="./img/shirt-outline-sm.png" alt="">
+                                <br>
+                                <div class="btn-group mt-1">
+                                    <button class="btn btn-sm btn-light">
+                                        S
+                                    </button>
+                                    <button class="btn btn-sm btn-primary">
+                                        M
+                                    </button>
+                                    <button class="btn btn-sm btn-light">
+                                        L
+                                    </button>
+                                </div>
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-md btn-primary text-uppercase rounded-3 w-100 d-block">
+                                        Add to cart
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-5">
+        <div class="container">
+            <div class="row  mb-4 pt-4 ">
+                <div class="text-center">
+                    <h4 class="text-uppercase ">New Arrivals</h4>
+                    <p class="text-secondary ">New Products in store listing</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="col-lg-2 m-2">
+                        <div class="card border-light">
+                            <img src="./img/shoe-blue-md.png" class="card-img-top rounded-3" alt="">
+                            <div class="card-body mt-3">
+                                <span class="text-uppercase text-secondary">Levis</span>
+                                <span class="float-end">
+                                   <img src="./img/star-filled.svg" alt="">
+                                   <img src="./img/star-filled.svg" alt="">
+                                   <img src="./img/star-filled.svg" alt="">
+                                   <img src="./img/star-empty.svg" alt="">
+                                   <img src="./img/star-empty.svg" alt="">
+                               </span>
+                                <p class="text-capitalize">Faxon canvas low-top Sneaker</p>
+                                <p class="fw-bold">$240.00</p>
+                                <img src="./img/shoes-blue-sm.png" alt="">
+                                <img src="./img/shoes-gray-sm.png" alt="">
+                                <br>
+                                <div class="btn-group mt-1">
+                                    <button class="btn btn-sm btn-light">
+                                        S
+                                    </button>
+                                    <button class="btn btn-sm btn-primary">
+                                        M
+                                    </button>
+                                    <button class="btn btn-sm btn-light">
+                                        L
+                                    </button>
+                                </div>
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-md btn-primary text-uppercase rounded-3 w-100 d-block">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 m-2">
+                        <div class="card border-light">
+                            <img src="./img/cap-green-md.png" class="card-img-top rounded-3" alt="">
+                            <div class="card-body mt-3">
+                                <span class="text-uppercase text-secondary">Levis</span>
+                                <span class="float-end">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                           </span>
+                                <p class="text-capitalize">Faxon canvas low-top Sneaker</p>
+                                <p class="fw-bold">$240.00</p>
+                                <img src="./img/cap-green-outline-sm.png" alt="">
+                                <img src="./img/cap-red-sm.png" alt="">
+                                <br>
+                                <div class="btn-group mt-1">
+                                    <button class="btn btn-sm  btn-light">
+                                        S
+                                    </button>
+                                    <button class="btn btn-sm  btn-primary">
+                                        M
+                                    </button>
+
+                                </div>
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-md btn-primary text-uppercase rounded-3 w-100 d-block">
+                                        Add to cart
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 m-2">
+                        <div class="card border-light">
+                            <img src="./img/glasses-md.png" class="card-img-top rounded-3" alt="">
+                            <div class="card-body mt-3">
+                                <span class="text-uppercase text-secondary">Levis</span>
+                                <span class="float-end">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                           </span>
+                                <p class="text-capitalize">Faxon canvas low-top Sneaker</p>
+                                <p class="fw-bold">$240.00</p>
+                                <img src="./img/glasses-outline-sm.png" alt="">
+                                <img src="./img/glasses-tilted-sm.png" alt="">
+                                <br>
+                                <div class="btn-group mt-1">
+
+
+                                </div>
+
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-md btn-primary text-uppercase rounded-3 w-100 d-block">
+                                        Add to cart
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 m-2">
+                        <div class="card border-light">
+                            <img src="./img/heal-md.png" class="card-img-top rounded-3" alt="">
+                            <div class="card-body mt-3">
+                                <span class="text-uppercase text-secondary">Levis</span>
+                                <span class="float-end">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                           </span>
+                                <p class="text-capitalize">Faxon canvas low-top Sneaker</p>
+                                <p class="fw-bold">$240.00</p>
+                                <img src="./img/heal-outline-sm.png" alt="">
+                                <br>
+                                <div class="btn-group mt-1">
+                                    <button class="btn btn-sm btn-light">
+                                        7
+                                    </button>
+                                    <button class="btn btn-sm btn-primary">
+                                        8
+                                    </button>
+                                    <button class="btn btn-sm btn-light">
+                                        9
+                                    </button>
+                                </div>
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-md btn-primary text-uppercase rounded-3 w-100 d-block">
+                                        Add to cart
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 m-2">
+                        <div class="card border-light">
+                            <img src="./img/shirt-md.png" class="card-img-top rounded-3" alt="">
+                            <div class="card-body mt-3">
+                                <span class="text-uppercase text-secondary">Levis</span>
+                                <span class="float-end">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-filled.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                               <img src="./img/star-empty.svg" alt="">
+                           </span>
+                                <p class="text-capitalize">Faxon canvas low-top Sneaker</p>
+                                <p class="fw-bold">$240.00</p>
+                                <img src="./img/shirt-outline-sm.png" alt="">
+                                <br>
+                                <div class="btn-group mt-1">
+                                    <button class="btn btn-sm btn-light">
+                                        S
+                                    </button>
+                                    <button class="btn btn-sm btn-primary">
+                                        M
+                                    </button>
+                                    <button class="btn btn-sm btn-light">
+                                        L
+                                    </button>
+                                </div>
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-md btn-primary text-uppercase rounded-3 w-100 d-block">
+                                        Add to cart
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-5">
+        <div class="container-fluid">
+            <div class="row m-5 mb-4 pt-4 ">
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-3 mb-5 d-flex">
+                    <div class="pb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="43.631" viewBox="0 0 64 43.631"><defs><style>.a{fill:#3680fb;}</style></defs><path class="a" d="M52.323,650.412a5.91,5.91,0,0,0-4.17,1.72,5.79,5.79,0,0,0,0,8.288,5.932,5.932,0,0,0,4.17,1.72,5.865,5.865,0,0,0,0-11.729Zm0,9.122a3.258,3.258,0,1,1,0-6.516,3.258,3.258,0,0,1,0,6.516Zm1.512-28.657a1.266,1.266,0,0,0-.873-.339H46.277a1.307,1.307,0,0,0-1.3,1.3v10.686a1.307,1.307,0,0,0,1.3,1.3H56.885a1.307,1.307,0,0,0,1.3-1.3v-7.155a1.3,1.3,0,0,0-.43-.964Zm1.746,10.347h-8v-8.093h4.874l3.128,2.815ZM20.5,650.412a5.91,5.91,0,0,0-4.17,1.72,5.79,5.79,0,0,0,0,8.288,5.932,5.932,0,0,0,4.17,1.72,5.865,5.865,0,0,0,0-11.729Zm0,9.122a3.258,3.258,0,1,1,0-6.516,3.258,3.258,0,0,1,0,6.516Zm-8.692-7.519H9.188v-3.466a1.3,1.3,0,1,0-2.606,0v4.77a1.307,1.307,0,0,0,1.3,1.3h3.923a1.3,1.3,0,0,0,0-2.606Zm6.607-7.1a1.307,1.307,0,0,0-1.3-1.3H1.3a1.3,1.3,0,1,0,0,2.606H17.111A1.3,1.3,0,0,0,18.414,644.913Zm-14.465-4.7,15.808.091a1.316,1.316,0,0,0,1.316-1.29,1.291,1.291,0,0,0-1.29-1.316L3.975,637.6H3.962a1.3,1.3,0,0,0-.013,2.606Zm2.659-5.916H22.415a1.3,1.3,0,0,0,0-2.606H6.607a1.3,1.3,0,0,0,0,2.606Zm56.911-1.759h0L54.187,624.8a1.284,1.284,0,0,0-.834-.3H42.38v-4.692a1.307,1.307,0,0,0-1.3-1.3H7.884a1.307,1.307,0,0,0-1.3,1.3v9.539a1.3,1.3,0,1,0,2.606,0v-8.236h30.6v30.9H29.1a1.3,1.3,0,0,0,0,2.606H45.012a1.3,1.3,0,0,0,0-2.606H42.393v-24.9H52.9l8.5,7.037L61.3,651.989H59.947a1.3,1.3,0,1,0,0,2.606h2.645a1.3,1.3,0,0,0,1.3-1.29l.1-19.757A1.377,1.377,0,0,0,63.518,632.532Z" transform="translate(0 -618.51)"/></svg>
+                    </div>
+                    <div class="mx-5">
+                        <h6 class="text-uppercase fw-bolder">Free Shipping</h6>
+                        <p class="text-secondary fs-6 ">
+                            Free shipping on all USA order or order above $200
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-5 d-flex">
+                    <div class="pb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="65" height="58.75" viewBox="0 0 65 58.75"><defs><style>.a{fill:#3680fb;stroke:#f8fafe;}</style></defs><g transform="translate(0.5 -24.5)"><path class="a" d="M64,56.875c0-5.208-3.694-9.484-8.357-9.847a5.646,5.646,0,0,0-3.931-3.834C50.456,32.871,42.074,25,32,25S13.544,32.871,12.288,43.194a5.646,5.646,0,0,0-3.931,3.834q-.243.019-.482.052V34.875a1.875,1.875,0,0,0-3.75,0V48.581A10.136,10.136,0,0,0,0,56.875c0,5.208,3.694,9.484,8.357,9.847a5.646,5.646,0,0,0,3.913,3.829A9.889,9.889,0,0,0,22,78.75h.434a5.884,5.884,0,0,0,5.566,4h8A5.875,5.875,0,0,0,36,71H28a5.884,5.884,0,0,0-5.566,4H22a6.135,6.135,0,0,1-5.921-4.557,5.634,5.634,0,0,0,3.8-5.318v-16.5A5.633,5.633,0,0,0,16.056,43.3C17.227,35.017,23.949,28.75,32,28.75S46.772,35.017,47.944,43.3a5.633,5.633,0,0,0-3.819,5.326v16.5A5.631,5.631,0,0,0,49.75,70.75h.5a5.634,5.634,0,0,0,5.393-4.028C60.306,66.359,64,62.083,64,56.875ZM28,74.75h8A2.125,2.125,0,0,1,36,79H28a2.125,2.125,0,0,1,0-4.25ZM3.75,56.875c0-2.973,1.928-5.533,4.375-6.036V62.911C5.678,62.409,3.75,59.848,3.75,56.875Zm12.375,8.25A1.877,1.877,0,0,1,14.25,67h-.5a1.877,1.877,0,0,1-1.875-1.875v-16.5A1.877,1.877,0,0,1,13.75,46.75h.5a1.877,1.877,0,0,1,1.875,1.875Zm36,0A1.877,1.877,0,0,1,50.25,67h-.5a1.877,1.877,0,0,1-1.875-1.875v-16.5A1.877,1.877,0,0,1,49.75,46.75h.5a1.877,1.877,0,0,1,1.875,1.875Zm3.75-2.214V50.839c2.447.5,4.375,3.063,4.375,6.036S58.322,62.409,55.875,62.911Z" transform="translate(0 0)"/></g></svg>
+                    </div>
+                    <div class="mx-5">
+                        <h6 class="text-uppercase fw-bolder">Support 24/7</h6>
+                        <p class="text-secondary fs-6 ">
+                            Contact us 24 hours a day, 7 days a week.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-5 d-flex">
+                    <div class="pb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><style>.a{fill:#3680fb;}</style></defs><g transform="translate(0 0)"><path class="a" d="M37.667,39a1.334,1.334,0,0,1-1.333-1.333V32.333A14.686,14.686,0,0,0,21.667,17.667H16.333a1.333,1.333,0,1,1,0-2.667h5.333A17.353,17.353,0,0,1,39,32.333v5.333A1.334,1.334,0,0,1,37.667,39Z" transform="translate(25 25)"/><path class="a" d="M25.667,30.665a1.323,1.323,0,0,1-.867-.32l-9.333-8a1.334,1.334,0,0,1,0-2.027l9.333-8a1.333,1.333,0,1,1,1.733,2.027l-8.152,6.987,8.152,6.987a1.333,1.333,0,0,1-.867,2.347Z" transform="translate(25 20.001)"/><path class="a" d="M42.333,41.667H5a4,4,0,0,1-4-4V8.333A1.334,1.334,0,0,1,2.333,7H47.667A1.334,1.334,0,0,1,49,8.333v8.16a1.333,1.333,0,0,1-2.667,0V9.667H3.667v28A1.337,1.337,0,0,0,5,39H42.333a1.333,1.333,0,1,1,0,2.667Z" transform="translate(1.667 11.667)"/><path class="a" d="M21.667,12.667H8.333a1.333,1.333,0,0,1,0-2.667H21.667a1.333,1.333,0,0,1,0,2.667Z" transform="translate(11.667 16.667)"/><path class="a" d="M52,16.333H1.333A1.334,1.334,0,0,1,0,15V4.333A1.334,1.334,0,0,1,1.333,3H52a1.334,1.334,0,0,1,1.333,1.333V15A1.334,1.334,0,0,1,52,16.333ZM2.667,13.667h48v-8h-48Z" transform="translate(0 5)"/><path class="a" d="M52,10.667a1.339,1.339,0,0,1-.944-.389L43.447,2.667H9.884L2.276,10.277A1.333,1.333,0,0,1,.391,8.392l8-8A1.323,1.323,0,0,1,9.332,0H44a1.343,1.343,0,0,1,.944.389l8,8A1.335,1.335,0,0,1,52,10.667Z" transform="translate(0.001 0)"/></g></svg>
+                    </div>
+                    <div class="mx-5">
+                        <h6 class="text-uppercase fw-bolder">15 Days Return</h6>
+                        <p class="text-secondary fs-6 ">
+                            Simply return it within 14 days for an exchange.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-5 d-flex">
+                    <div class="pb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="54.703" height="65.153" viewBox="0 0 54.703 65.153"><defs><style>.a{fill:#3680fb;stroke:#f8fafe;}</style></defs><g transform="translate(-16.649 0.653)"><path class="a" d="M70.82,16.479c-.033-1.728-.064-3.36-.064-4.939a2.24,2.24,0,0,0-2.24-2.24c-9.58,0-16.875-2.753-22.955-8.665a2.24,2.24,0,0,0-3.123,0C36.358,6.546,29.065,9.3,19.485,9.3a2.24,2.24,0,0,0-2.24,2.24c0,1.579-.031,3.212-.064,4.941-.307,16.08-.728,38.1,26.085,47.4a2.238,2.238,0,0,0,1.467,0C71.547,54.583,71.127,32.56,70.82,16.479ZM44,59.383C21,51.03,21.352,32.73,21.661,16.566c.019-.97.036-1.91.049-2.832,8.973-.379,16.148-3.1,22.29-8.448,6.143,5.351,13.319,8.07,22.292,8.448.013.921.03,1.861.049,2.831C66.649,32.73,67,51.029,44,59.383Z"/><path class="a" d="M87.759,79.542,76.947,90.353,72.333,85.74a2.24,2.24,0,0,0-3.168,3.168l6.2,6.2a2.24,2.24,0,0,0,3.168,0l12.4-12.4a2.24,2.24,0,1,0-3.168-3.168Z" transform="translate(-36.046 -55.323)"/></g></svg>
+                    </div>
+                    <div class="mx-5">
+                        <h6 class="text-uppercase fw-bolder">100% secure payment</h6>
+                        <p class="text-secondary fs-6 ">
+                            We ensure secure payment with PEV.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid  bg-light">
+            <div class="container">
+                <div class="row px-3 py-5">
+                    <div class="col-lg-3">
+                        <h6 class="text-uppercase px-1 my-3">About</h6>
+                        <p class="text-secondary fs-6 mb-2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tempor incididunt.</p>
+                        <div class="my-4">
+                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><defs><style>.a{fill:#bbcdee;}</style></defs><path class="a" d="M20,10A10,10,0,1,0,10,20c.059,0,.117,0,.176,0V12.215H8.027v-2.5h2.148V7.867a3.009,3.009,0,0,1,3.211-3.3,17.452,17.452,0,0,1,1.926.1V6.9H14c-1.035,0-1.238.492-1.238,1.215V9.707h2.48l-.324,2.5H12.762v7.4A10,10,0,0,0,20,10Z"/></svg>
+                            <svg class="m-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><defs><style>.a{fill:#bbcdee;}</style></defs><g transform="translate(-0.002)"><path class="a" d="M21451.725,16783v-3.529a8.984,8.984,0,0,1-3.723-7.215,8.861,8.861,0,0,1,2.928-6.543A10.341,10.341,0,0,1,21458,16763c5.514,0,10,4.156,10,9.262s-4.486,9.256-10,9.256a10.783,10.783,0,0,1-2.871-.387l-3.4,1.867Zm5.221-13.334-5.469,5.8,4.969-2.715v0l2.549,2.715,5.463-5.8-4.908,2.715Z" transform="translate(-21448 -16763)"/></g></svg>
+                            <svg class="m-2" xmlns="http://www.w3.org/2000/svg" width="20" height="16.25" viewBox="0 0 20 16.25"><defs><style>.a{fill:#bbcdee;}</style></defs><g transform="translate(0 -48)"><g transform="translate(0 48)"><path class="a" d="M20,49.924a8.549,8.549,0,0,1-2.363.647,4.077,4.077,0,0,0,1.8-2.266,8.194,8.194,0,0,1-2.6.993,4.1,4.1,0,0,0-7.092,2.8,4.222,4.222,0,0,0,.1.935,11.606,11.606,0,0,1-8.451-4.289,4.1,4.1,0,0,0,1.26,5.48A4.049,4.049,0,0,1,.8,53.722v.045A4.119,4.119,0,0,0,4.085,57.8a4.092,4.092,0,0,1-1.075.135,3.626,3.626,0,0,1-.776-.07,4.139,4.139,0,0,0,3.831,2.856A8.239,8.239,0,0,1,.981,62.466,7.68,7.68,0,0,1,0,62.41a11.543,11.543,0,0,0,6.29,1.84A11.59,11.59,0,0,0,17.96,52.583c0-.181-.006-.356-.015-.53A8.18,8.18,0,0,0,20,49.924Z" transform="translate(0 -48)"/></g></g></svg>
+                            <svg class="m-2" xmlns="http://www.w3.org/2000/svg" width="19.966" height="20" viewBox="0 0 19.966 20"><defs><style>.a{fill:#bbcdee;}</style></defs><path class="a" d="M10.424,0A9.987,9.987,0,0,0,6.431,19.139,8.908,8.908,0,0,1,6.6,16.833c.207-.826,1.274-5.439,1.274-5.439a4.036,4.036,0,0,1-.31-1.583c0-1.48.861-2.582,1.928-2.582a1.35,1.35,0,0,1,1.343,1.515,21.322,21.322,0,0,1-.9,3.546,1.545,1.545,0,0,0,1.583,1.928c1.893,0,3.167-2.444,3.167-5.3,0-2.2-1.48-3.821-4.165-3.821A4.742,4.742,0,0,0,5.6,9.879a2.865,2.865,0,0,0,.654,1.962.489.489,0,0,1,.138.551c-.034.172-.172.62-.207.792a.353.353,0,0,1-.516.241c-1.411-.585-2.031-2.1-2.031-3.821,0-2.823,2.375-6.231,7.126-6.231,3.821,0,6.334,2.754,6.334,5.714,0,3.924-2.169,6.85-5.37,6.85A2.9,2.9,0,0,1,9.288,14.7S8.7,17.005,8.6,17.453a8.125,8.125,0,0,1-1,2.134A9.657,9.657,0,0,0,10.424,20a10,10,0,0,0,0-20" transform="translate(-0.441)"/></svg>
+                            <svg class="m-2" xmlns="http://www.w3.org/2000/svg" width="19.677" height="20" viewBox="0 0 19.677 20"><defs><style>.a{fill:#bbcdee;}</style></defs><path class="a" d="M19.677,10.8c0,5.706-3.907,9.766-9.677,9.766a10,10,0,0,1,0-20,9.617,9.617,0,0,1,6.706,2.617L13.984,5.8C10.423,2.361,3.8,4.942,3.8,10.563A6.264,6.264,0,0,0,10,16.877a5.407,5.407,0,0,0,5.677-4.31H10V9.127h9.52A8.767,8.767,0,0,1,19.677,10.8Z" transform="translate(0 -0.563)"/></svg>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <h6 class="text-uppercase px-1 my-3">Pages</h6>
+                        <ul class="mb-2">
+                            <li class="text-secondary fs-6">Home</li>
+                            <li class="text-secondary fs-6">All Products</li>
+                            <li class="text-secondary fs-6">Wishlist</li>
+                            <li class="text-secondary fs-6">My Orders</li>
+                            <li class="text-secondary fs-6">My Review</li>
+                            <li class="text-secondary fs-6">My Profile</li>
+                            <li class="text-secondary fs-6">My Address</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <h6 class=""> </h6>
+                        <ul class="mt-5">
+                            <li class="text-secondary fs-6">Help Center</li>
+                            <li class="text-secondary fs-6">Contact Us</li>
+                            <li class="text-secondary fs-6">Terms & Conditions</li>
+                            <li class="text-secondary fs-6">Privacy Policy</li>
+                            <li class="text-secondary fs-6">Refund Policy</li>
+                            <li class="text-secondary fs-6">Shipping Policy</li>
+                            <li class="text-secondary fs-6">Cite Map</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6 class="text-uppercase px-1 my-3">Contacts</h6>
+                        <p class="fs-6 text-secondary"><span class="text-dark fs-5">Address: </span>7895 Piermont Dr NE Albuquerque, NM 198866, United States of America
+                        <p class="fs-6 text-secondary"><span class="text-dark fs-5">Phone: </span>+1 777 1234 576; +1 342 3445 333</p>
+                        <p class="fs-6 text-secondary"><span class="text-dark fs-5">Hours: </span>all week from 9 am to 9 pm</p>
+                        <p class="fs-6 text-secondary"><span class="text-dark fs-5">E-mail: </span>info@storeA.com</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6 class="text-uppercase px-1 my-3">NewsLetter Signup</h6>
+                        <p class="fs-6 text-secondary fs-6 mb-2">Sign up for our e-mail and be the first who know our special offers! Furthermore, we will give a 15% discount on the next order after you sign up.</p>
+                        <form class="mt-3">
+                            <div class="form-group  border rounded-2 border-primary">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text text-primary bg-white border-white ">@</div>
+                                    </div>
+                                    <input type="text" class="form-control border-white" placeholder="Enter your e-mail">
+                                    <button class="btn btn-primary btn-md text-uppercase">Get</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-1">
+            <div class="row d-flex ">
+                <div class="col-lg-6 col-sm-12">
+                    <p class="text-secondary fs-6 p-3">Store A 2020. <span> &copy;</span>  All Rights Reserved</p>
+                </div>
+                <div class="col-lg-6 col-sm-12 d-flex justify-content-end">
+                    <div class="p-1">
+                        <img src="img/stripe.png" alt="" class="mx-1" >
+                        <svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="18.483" height="20" viewBox="0 0 20.483 24"><defs><style>.a{fill:#03a9f4;}.b{fill:#283593;}</style></defs><path class="a" d="M148.386,116.333a.5.5,0,0,0-.75.377c-.018.164-.046.328-.081.5-.979,4.443-2.945,6.6-6.012,6.6h-4.5a.5.5,0,0,0-.489.4l-1.5,7.031-.268,1.79a1.5,1.5,0,0,0,1.467,1.779h3.01a1.493,1.493,0,0,0,1.455-1.139l1.216-4.861h2.609c3.079,0,5.207-2.455,5.992-6.913h0A5.226,5.226,0,0,0,148.386,116.333Z" transform="translate(-130.201 -110.814)"/><path class="b" d="M54.755,1.782A5.262,5.262,0,0,0,50.855,0h-8.28A2.487,2.487,0,0,0,40.1,2.126L37.53,19.277A1.5,1.5,0,0,0,39.015,21h3.84a.5.5,0,0,0,.489-.4L44.759,14h4.1c3.558,0,5.909-2.487,6.989-7.4a5.888,5.888,0,0,0,.1-.593A5.163,5.163,0,0,0,54.755,1.782Z" transform="translate(-37.513 0)"/></svg>
+                        <svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="30.078" height="17.2" viewBox="0 0 32.078 19.2"><defs><style>.a{fill:#fcb331;}.b{fill:#ed1b2e;}.c{fill:#fff;}</style></defs><path class="a" d="M180.521,66.85l.029-.007.022,0,.021-.005.015-.007.014-.01.005-.01.007-.015V66.77l0-.017-.007-.012-.009-.007-.01-.007-.015,0-.017,0h-.132v.13Z" transform="translate(-149.507 -55.282)"/><path class="a" d="M181.76,67.437l.014-.017-.007.007Z" transform="translate(-150.601 -55.862)"/><path class="a" d="M180.925,67.443l.014,0-.029.007Z" transform="translate(-149.897 -55.879)"/><path class="a" d="M178.81,67.178V67.2l.007-.079Z" transform="translate(-148.157 -55.614)"/><path class="a" d="M179.586,65.711l-.019-.07-.033-.065-.043-.055-.051-.046-.062-.033-.07-.022h-.149l-.072.022-.062.033-.051.046-.043.055-.031.065-.021.07v.156l.021.07.031.062.043.055.051.046.062.036.072.022h.149l.07-.022.062-.036.051-.046.043-.055.033-.062.019-.075v-.151Zm-.171.01v.041l-.014.017-.015.012h-.065l.1.161h-.065l-.1-.161h-.081v.161h-.1v-.377h.271l.022.014.017.019.012.019v.046Z" transform="translate(-148.215 -54.205)"/><path class="a" d="M183.527,67.1l0,.021-.009-.094Z" transform="translate(-152.059 -55.539)"/><path class="a" d="M109.562,9.086l-.036-.485-.062-.478-.074-.468-.106-.463-.13-.454L109,6.291l-.171-.434-.2-.425-.209-.415-.237-.389-.25-.391-.269-.377-.285-.358-.3-.343-.321-.334-.334-.317-.343-.3-.362-.286-.377-.267-.4-.266-.4-.23-.415-.211L103.7.754l-.437-.171L102.819.43,102.362.3,101.9.194,101.424.11l-.478-.062-.49-.034L99.962,0,99.47.014l-.489.034L98.5.11,98.03.194,97.567.3,97.111.43l-.444.153L96.23.754,95.8.948l-.41.211-.4.23-.387.25-.375.267-.363.286-.324.281.024.019.333.317.317.334.014.015h3.29v.514H94.665l.135.171.266.377.058.089h2.4v.514H95.441l.1.171.214.415.019.043h1.74v.514H96.005l.117.295.113.343h1.282v.514H96.389l.01.036.106.463.026.135h.986v.012l.034-.015.094-.036.1-.033.1-.026.1-.022.11-.019.11-.017.117-.012h.54l.1.014.091.014.087.019.084.015.077.021.075.019.065.019.062.021.051.019.045.015.039.014.029.014h.019l-.161.953-.043-.024L99.4,8.7l-.046-.022-.048-.024-.048-.019-.057-.019L99.151,8.6l-.058-.019-.062-.015-.06-.014L98.9,8.535l-.069-.01h-.473l-.087.01-.089.015-.091.026L98,8.613l-.091.046-.091.058-.087.07-.084.084-.081.1-.079.12-.07.142-.069.161-.062.182-.051.207-.019.117v.029h.237v.525h-.219l.027.093.036.1.048.087.058.084.069.075.077.067.087.058.1.05.11.041.123.029.041.01H98.5l.084-.01.084-.015.081-.022.082-.026.081-.036L98.985,11l.069-.051.065-.058-.146.857-.021.017-.019.019-.026.022-.029.021-.036.026-.045.022-.053.022-.058.021-.074.022-.084.015-.1.014-.113.012h-.442L97.694,12l-.147-.015-.149-.033-.149-.048-.149-.075-.142-.077-.135-.1-.063-.055h-.271l-.087.382-.072.252h1.2v.514H96.156l-.043.13-.171.437-.031.07h1.615V13.9h-1.85l-.129.25-.214.4h2.208v.514H94.99l-.185.261-.285.363v.01h3.026v.525H94.039l-.142.149-.333.319-.024.021.324.281.363.285.375.269.387.249.4.235.41.209.425.2.437.171.444.151.456.13.463.106.473.084.478.062.489.036.494.026.5-.014.49-.036.478-.062L101.9,19l.463-.106.456-.13.447-.151.437-.171.427-.2.415-.209.4-.235.391-.249.377-.269.362-.285.343-.3.334-.319.321-.343.3-.343.285-.363.269-.375.261-.387.233-.4.209-.415.2-.427.171-.437.151-.447.13-.456.106-.463.084-.477.062-.478.036-.49.014-.5Zm-7.371,2.206-.134.718v.015H101.2V11.7l-.05.051-.058.045-.069.046-.067.045-.079.039-.084.039-.081.031-.091.026-.091.027-.091.015-.094.014h-.271l-.091-.014-.117-.029L99.79,12l-.094-.041-.084-.053-.075-.051-.063-.062-.053-.062-.045-.067-.043-.069-.029-.074-.026-.075-.015-.07-.014-.075v-.219l.01-.127.019-.123.029-.117.041-.11.05-.106.063-.1.069-.091.077-.081.086-.077.087-.069.1-.065.1-.051.1-.045.108-.036.11-.029.113-.019h1.1l.009-.058.01-.065V9.653h0l-.014-.069-.026-.058-.039-.055-.045-.045-.055-.039-.065-.029-.069-.019h-.675l-.1.01-.1.014-.094.012-.094.017-.084.015-.077.017-.072.019-.055.019-.041.022L99.79,9.5l-.033-.019.226-.782V8.69h.01l.07-.029.075-.026.077-.022.077-.017.081-.015.082-.014.087-.012h.981l.1.015.1.024.106.029.1.038.1.046.1.058.094.06.081.072.077.081.065.091.051.1.036.106.022.113v.123l-.015.132Zm2.081-1.9-.094.033-.084.039-.074.048-.065.051-.058.055-.051.062-.043.065-.039.069-.033.07-.026.072-.019.07-.019.072-.014.07-.327,1.843h-.912l.605-3.468h.91l-.1.586.046-.065L103.925,9l.048-.062.048-.055.053-.051.051-.051.055-.046.058-.045.062-.039.065-.036.067-.031.072-.026.077-.024.081-.015.087-.01h.091l-.146.833h-.207l-.113.019Zm3.178,2.619h-.888l.065-.36v-.033l-.051.065-.055.058-.055.051-.058.046-.058.041-.058.036-.058.029-.062.029-.062.022-.062.017-.062.015-.065.01-.063.01h-.192l-.171-.012L105.338,12l-.142-.055-.129-.075-.117-.093-.1-.111-.091-.12-.077-.135-.065-.146-.051-.153-.036-.158-.026-.171-.01-.171v-.171l.017-.171.029-.171.055-.153.058-.182.069-.171.081-.156.084-.146.1-.129.1-.117.108-.108.113-.093.12-.082.123-.07.122-.055.13-.046.129-.029.13-.019h.226l.091.01.084.015.077.022.075.026.065.029.063.036.058.036.053.039.048.041.041.043.039.041.033.043.029.041.026.039.019.039.228-1.272h.879Zm1.507-.331-.026.087-.046.079-.055.063-.069.055-.077.043-.084.026-.091.01-.091-.01L108.334,12l-.077-.043-.069-.055-.055-.063-.045-.079-.026-.087-.01-.094.01-.093.026-.087.045-.079.055-.067.069-.055.077-.039.084-.026.091-.01.091.01.084.026.077.039.069.055.055.067.046.079.026.087v.187Z" transform="translate(-77.505)"/><path class="a" d="M111.521,48.7l.058-.086.058-.081.046-.055h-.214l.033.25Z" transform="translate(-92.361 -40.169)"/><path class="a" d="M178.26,67.03l-.01.094,0-.021Z" transform="translate(-147.693 -55.539)"/><path class="b" d="M73.183,55.805l0,.065.017.055.033.043.041.036.058.022.065.019.072.014.077.005.072,0,.053-.007-.048-.269-.062-.478-.009-.12h-.1l-.033-.525h.106l-.009-.341L73.519,54H73.5Z" transform="translate(-60.635 -44.743)"/><path class="b" d="M15.681,16.38l-.142-.149h0l-.043-.048-.13-.137-.3-.343-.288-.37-.185-.261h0l-.021-.033-.058-.082-.252-.386-.23-.4-.129-.25h0l-.017-.026-.074-.144-.192-.427-.171-.437-.149-.447-.129-.456-.034-.149v.026l-.022.015-.022.014-.024.014-.022.012-.022.01H13l-.029.01-.029.01h-.585l-.13.055-.113-.012-.1-.021-.087-.022-.075-.029-.06-.033-.057-.038-.041-.043-.031-.046-.022-.057-.017-.055-.009-.062v-.213l.01-.081.619-3.533h.811l.017-.1.108-.463.01-.036h0V7.135l.113-.4.149-.446.171-.434.192-.425.213-.415.238-.389.25-.391.266-.377.135-.171h0l.149-.187.3-.343.319-.334.333-.317.022-.019-.324-.281-.362-.286-.375-.283-.389-.25-.4-.23L13.773.948,13.349.754,12.912.583,12.468.43,12.012.3,11.549.194,11.076.11,10.6.048,10.114.014,9.615,0l-.5.014L8.631.048,8.153.11,7.677.194,7.214.3,6.758.43,6.31.583,5.873.754,5.446.948l-.415.211-.4.23-.391.25-.375.267L3.5,2.193l-.343.3-.334.317L2.5,3.144l-.3.343-.285.358-.267.377-.257.406-.233.389-.211.415-.194.425-.171.434L.43,6.737.3,7.2l-.108.463L.11,8.124.048,8.6l-.034.483L0,9.579l.014.5.034.49.062.478.084.477.108.463.129.456.153.447.171.437.194.427.211.415.233.406.25.391.267.375.285.363.3.343.321.343.334.319.343.3.362.285.375.269.4.242.4.235.415.209.427.2.437.171.447.151.456.13L7.675,19l.477.084.478.062.489.036.5.014.5-.014.489-.036.48-.062L11.556,19l.463-.106.456-.13.444-.151.437-.171.423-.2.411-.209.4-.235.389-.249.375-.269L15.718,17l.324-.281L16.02,16.7ZM5.232,12.009H4.351l.557-3.177H4.872L3.555,12.009H2.561v-.134l-.022-.343-.029-.5-.033-.576-.033-.579L2.415,9.36l-.022-.369V8.835H2.331l-.538,3.173H.914l.734-4.251H3.18l.146,2.529L4.383,7.764h1.6Zm3.374-.718-.13.718H7.659l.024-.134.015-.118.014-.091.012-.05-.045.053-.051.051-.062.048-.069.046-.077.045-.082.039-.084.038-.087.033L7.075,12l-.094.022-.094.021-.1.012H6.514l-.087-.012-.113-.029-.1-.033-.089-.043-.082-.048-.07-.051L5.9,11.779l-.051-.062-.05-.06-.038-.069-.033-.07-.026-.072-.021-.07L5.673,11.3l-.015-.079v-.149l.01-.127.019-.12.033-.113.043-.11.051-.1.058-.094.069-.091.077-.081.081-.075.091-.067.094-.062.1-.053.1-.045L6.59,9.9,6.7,9.867l.113-.019h1.1V9.825l.021-.058L7.954,9.7V9.638l-.014-.072L7.911,9.5l-.026-.1-.053-.05-.062-.041-.057-.029L7.63,9.257H7.046l-.1.01-.1.01-.1.012-.1.014-.093.015-.084.017-.079.015-.07.021-.058.019-.046.022-.038.015.231-.78.07-.029.072-.026.077-.022L6.7,8.556l.079-.017.084-.012.084-.014h1l.1.017.1.022.1.029.1.038.1.046.1.055.091.062.081.07.072.079.063.087.05.1.033.1.019.11v.123l-.019.129Zm2.868-2h-.883l-.065.01h-.062l-.055.021-.05.019-.045.022-.043.026-.031.033-.029.029-.021.036-.015.036V9.6l.01.043.012.041.026.043.033.041.065.062.077.05.091.041.1.036.1.033.108.036.106.038.1.043.1.055.091.069.081.081.069.1.051.123.033.146.014.171-.014.2-.022.153-.039.132-.051.123-.065.106-.074.094-.086.081L11,11.811l-.1.062-.1.048-.108.043-.11.033-.113.026L10.354,12l-.108.01H9.288L9.214,12H9.146l-.06-.027-.06-.01-.057-.015-.055-.014-.051-.019L8.811,11.9l-.055-.021L8.9,11.16h.065l.045.014.055.014.058.012.065.014.07.015.079.014.081.012.084.014.087.01.091.009.089.027h.281l.094-.019.074-.026.058-.036.046-.046.033-.045.026-.051.015-.051.014-.05V10.9l-.021-.1-.055-.065-.081-.055-.1-.048-.115-.048-.125-.046-.127-.051-.129-.058-.123-.069-.113-.074-.1-.1-.081-.123-.058-.146-.029-.171V9.538l.015-.127L9.2,9.293l.031-.111.039-.1.051-.1L9.375,8.9l.069-.081.081-.072.094-.06.1-.053.117-.048.13-.036.146-.029.158-.022.171-.014h.946l.045.01h.2Z"/><path class="b" d="M76.265,41.776l-.108.463-.017.1h.086l-.005.033h5.892l-.024-.135-.106-.463-.01-.036h-5.7Z" transform="translate(-63.087 -34.585)"/><path class="b" d="M102.975,61.211l-.039-.218,0-.063h-1.154l-.108.634H103.1l-.065-.156Z" transform="translate(-84.241 -50.485)"/><path class="b" d="M83.31,57.58h0l-.12.622Z" transform="translate(-68.929 -47.709)"/><path class="b" d="M85.076,54.3l.005-.081,0-.077-.005-.072-.014-.063-.022-.062-.022-.055-.033-.05-.033-.045-.039-.039-.041-.033-.05-.029-.048-.026-.051-.019-.053-.014-.055-.009-.058-.007-.06,0-.06.009-.055.014-.055.019-.055.026-.048.029-.048.036-.043.039-.043.045-.038.05-.036.051L83.984,54l-.029.058-.022.065-.019.063-.014.069-.01.048Z" transform="translate(-69.509 -44.428)"/><path class="b" d="M83.18,61.225h0l0-.015Z" transform="translate(-68.921 -50.717)"/><path class="b" d="M81.229,81.42l.23.4.25.391.058.082-.309-.489h3.559l.219-.386.129-.25H81.1Z" transform="translate(-67.197 -67.255)"/><path class="b" d="M78.544,21.641l-.266.375-.25.393-.23.4-.213.415-.192.423-.171.435-.149.446-.113.4.156-.5H82.5l-.113-.343-.117-.295H77.346l.226-.521h4.467l-.019-.043-.214-.415-.1-.178H77.915l.309-.521h3.163l-.058-.091-.266-.375-.135-.171H78.679Z" transform="translate(-63.767 -17.789)"/><path class="b" d="M87.758,14.766l-.319.334-.3.35-.149.187.441-.521H88.8l-.014-.015-.317-.334-.334-.317-.022-.019-.022.019Z" transform="translate(-72.077 -11.956)"/><path class="b" d="M85.3,88.181l.285.363.3.35.13.137-.415-.477h1.925l.009-.01.285-.363L88,87.92H85.11Z" transform="translate(-70.52 -72.848)"/><path class="b" d="M79.507,52.178h-.929l.605-3.468h.929L80,49.3l.048-.065.05-.065.045-.06.048-.057.05-.055.048-.048.051-.048.055-.043.058-.038.062-.033.069-.033.074-.026.079-.021.084-.015.091-.01.1-.007h.022l.024,0,.026,0H81.1l.022,0,.017,0,.012,0h0l-.007.01-.015.022-.022.038-.029.05-.033.055-.033.062-.033.062-.026.06-.029.091-.029.091-.022.091-.024.084-.015.072-.014.058-.009.038,0,.014h0l-.01,0-.012,0-.017,0h-.015l-.015,0-.014,0h-.01l-.125.01-.111.017-.1.026-.091.029-.077.034-.072.039-.058.048-.051.05-.046.055-.038.058L79.912,50l-.026.065-.009.026h1.058l.022-.163.026-.132.029-.13.033-.125.033-.12.036-.113.041-.113.043-.108.045-.1.05-.1.048-.094.036-.06-.033-.25H75.278l-.038.23h.54l-.117.732-.545-.015-.009.322.009.341H75.6l.021-.1.036-.135.05-.139.057-.141.075-.141.091-.137.1-.129.127-.123.142-.11.161-.1.189-.081.211-.058.233-.039.262-.014.125,0,.134.014.132.022.134.033.129.048.127.058.117.079.106.091.1.11.081.129.065.149.045.171.026.2,0,.219-.022.247-.048.271-.017.2h-2.1l-.007.039,0,.058.007.062.012.062.022.062.027.058.034.062.039.055.045.055.05.048.051.05.058.038.058.036.065.029.063.022.065.014.084.012.082.01.084.01.084.005.084,0h.087l.084,0,.087-.005.087-.014.087-.015.091-.021.087-.029.091-.036.093-.038.091-.051.094-.057-.129.8-.053.026-.051.026-.051.021-.048.019-.05.015-.051.017L78,52.131l-.055.01-.058.01-.065.007-.069.005-.074.007-.084,0H77.5l-.1,0H77.3l-.159,0-.161-.015-.163-.024-.161-.038-.159-.05-.151-.062-.146-.081-.137-.093-.125-.111-.11-.132-.094-.149-.079-.171-.055-.192-.036-.216-.009-.226h-.4l.009.12.062.478.048.269h.01l.058-.01.051-.012.043-.014.029-.01.019-.005.007,0L75.377,52l.034.149.129.456.149.447.171.437.192.427.074.144-.233-.5h4.754l.031-.07.173-.437.043-.13H75.648l-.163-.521h5.571l.072-.252.087-.382H79.576Z" transform="translate(-62.234 -40.169)"/><path class="b" d="M91.494,94.829l.142-.149h-1l.142.149.333.321.022.019.022-.019Z" transform="translate(-75.102 -78.449)"/><path class="a" d="M97.987,18.951h2.853V18.43H97.55l.288.334Z" transform="translate(-80.827 -15.271)"/><path class="a" d="M86.99,21.47Z" transform="translate(-72.077 -17.789)"/><path class="a" d="M86.99,18.951h2.247l-.149-.187L88.8,18.43h-1.37Z" transform="translate(-72.077 -15.271)"/><path class="a" d="M103.1,25.711h2.076V25.19H102.78l.19.3Z" transform="translate(-85.161 -20.872)"/><path class="a" d="M82.53,25.711h3.789l-.127-.219-.19-.3H82.839Z" transform="translate(-68.382 -20.872)"/><path class="a" d="M106.818,32.461h1.512V31.94h-1.74l.171.381Z" transform="translate(-88.317 -26.465)"/><path class="a" d="M79.21,32.461h4.922l-.057-.141L83.9,31.94H79.436Z" transform="translate(-65.631 -26.465)"/><path class="a" d="M109.414,39.221h1.128V38.7H109.26l.034.1Z" transform="translate(-90.53 -32.066)"/><path class="a" d="M76.92,41.641h0l.005-.021Z" transform="translate(-63.734 -34.485)"/><path class="a" d="M76.935,39.2l-.005.021h5.7l-.12-.418-.034-.1H77.091Z" transform="translate(-63.742 -32.066)"/><path class="a" d="M108.85,71.891h1.368V71.37h-1.205l-.058.2Z" transform="translate(-90.19 -59.135)"/><path class="a" d="M77.463,71.891h5.246l.1-.317.058-.2H77.3Z" transform="translate(-64.049 -59.135)"/><path class="a" d="M105.98,78.651h1.86V78.13h-1.615l-.159.357Z" transform="translate(-87.812 -64.736)"/><path class="a" d="M81.05,81.071h0l-.01-.021Z" transform="translate(-67.147 -67.156)"/><path class="a" d="M79.913,78.631l.01.021h4.265l.086-.165.159-.357H79.68Z" transform="translate(-66.021 -64.736)"/><path class="a" d="M102.051,85.286l-.081.115h2.547V84.88h-2.208l-.01.015Z" transform="translate(-84.489 -70.329)"/><path class="a" d="M85.009,87.763h0l-.021-.033Z" transform="translate(-70.42 -72.691)"/><path class="a" d="M83.5,85.369l.021.033h2.89l.081-.115.249-.391.01-.015H83.19Z" transform="translate(-68.929 -70.329)"/><path class="a" d="M96.45,92.145h3.494V91.62H96.918l-.293.339Z" transform="translate(-79.916 -75.914)"/><path class="a" d="M90.413,94.448h0L90.37,94.4Z" transform="translate(-74.878 -78.217)"/><path class="a" d="M88.365,92.1l.046.048h1l.175-.185.293-.339H87.95Z" transform="translate(-72.873 -75.914)"/><path class="a" d="M111.064,45.961h.214l.019-.022.063-.072.069-.067.074-.065.075-.062.077-.055.081-.051.089-.05.087-.041.055-.024V45.44h-.987l.06.333Z" transform="translate(-91.955 -37.65)"/><path class="a" d="M76.09,45.961h6.065l-.024-.189-.06-.333H76.179Z" transform="translate(-63.046 -37.65)"/><path class="a" d="M110.814,66.33l-.038-.05-.027.158-.019.081H111l-.067-.058Z" transform="translate(-91.748 -54.918)"/><path class="a" d="M102.847,64.913l-.069-.1-.091-.161-.012-.026h-1.428l-.087.521H102.8l.019-.081Z" transform="translate(-83.818 -53.551)"/><path class="a" d="M114.88,58.067l0,.11.01.11.022.1,0,0h.216V57.87H114.9l-.01.084Z" transform="translate(-95.186 -47.949)"/><path class="a" d="M102.375,57.976l-.015.069-.014.07-.046.279h1.154l-.01-.166.007-.252.014-.106h-1.058l-.015.038Z" transform="translate(-84.763 -47.949)"/><path class="a" d="M74.573,58.395h.1l-.026-.37-.005-.154H74.54Z" transform="translate(-61.762 -47.949)"/><path class="a" d="M75.191,58.395h.4v-.014l.015-.266.014-.1.019-.12.005-.022H75.16l.005.154Z" transform="translate(-62.275 -47.949)"/><path class="c" d="M83.9,57.3l-.01.048h0Z" transform="translate(-69.509 -47.477)"/><path class="c" d="M83.14,61.339l.007-.039h0Z" transform="translate(-68.887 -50.791)"/><path class="a" d="M164.835,54.915l-.014-.082-.022-.077-.026-.074-.033-.065-.039-.062-.043-.051-.048-.046-.055-.038-.058-.026-.062-.017-.067-.007-.087.007-.082.014-.074.026-.075.033-.063.041-.065.053-.055.055-.055.06-.05.072-.045.074-.043.079-.034.084-.033.087-.026.087-.027.094-.019.093-.015.142.007.156.022.159.041.151.065.134.084.106.106.072.13.026.091-.007.084-.019.077-.024.075-.034.067-.039.065-.048.062-.055.055-.058.048-.065.046-.072.041-.074.036-.079.033-.081.026-.084.022-.087.017-.087.015-.091.01-.093V55.09l0-.091Z" transform="translate(-135.488 -45.049)"/><path class="b" d="M40.015,60.616,40,60.605l-.033-.007-.036-.005-.041,0h-.1l-.051,0-.055.005-.051.007-.053.007-.048.007-.045.009-.039.01-.036.01-.022.005-.026.01-.036.014-.036.015-.041.019-.043.024-.045.022-.043.026-.045.033-.043.033-.038.039-.036.038-.033.043-.022.045-.021.051-.009.053,0,.11.015.087.033.063.043.05.048.033.055.019.051.01.051,0,.1,0,.087-.01.084-.014.075-.019.063-.022.062-.029.055-.029.05-.036.041-.033.039-.038.033-.036.026-.039.022-.038.021-.039.015-.036.01-.036.026-.093L40,60.835l.019-.1.017-.084,0-.017Z" transform="translate(-32.207 -50.203)"/><path class="c" d="M143.061,69.92h-.017l0,.019Z" transform="translate(-118.519 -57.934)"/><path class="a" d="M133.815,60.6l-.022-.01-.033-.009-.036,0-.043,0h-.048l-.048,0-.053.007-.051.005-.051.007-.048.007-.05.009-.041.007-.043.01-.033.007-.022,0-.026.009-.033.01-.036.012-.041.021-.039.019-.045.022-.043.029-.041.029-.043.036-.036.036-.034.041-.029.046-.024.048-.019.051-.01.057,0,.11.017.087.026.063.039.05.048.033.055.019.055.01.055,0,.1,0,.091-.01.084-.015.074-.024.072-.026.062-.029.058-.033.051-.038.046-.036.038-.043.036-.038.029-.043.022-.038.017-.039.012-.039.01-.036.012-.089.017-.094.012-.091.007-.081-.007-.021Z" transform="translate(-109.943 -50.187)"/><path class="c" d="M182.973,67.178h0l-.005-.058Z" transform="translate(-151.604 -55.614)"/><path class="c" d="M182.993,67.481l0-.021h0Z" transform="translate(-151.62 -55.895)"/></svg>
+                        <svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="50.775" height="15" viewBox="0 0 52.775 16"><defs><style>.a{fill:#3c58bf;}.b{fill:#293688;}.c{fill:#ffbc00;}.d{fill:#f7981d;}.e{fill:#ed7c00;}.f{fill:#051244;}</style></defs><path class="a" d="M184.8,195.479l2.681-15.079h4.188l-2.6,15.079Z" transform="translate(-165.449 -179.897)"/><path class="b" d="M184.8,195.479l3.435-15.079h3.435l-2.6,15.079Z" transform="translate(-165.449 -179.897)"/><path class="a" d="M260.817,176.27a10.625,10.625,0,0,0-3.853-.67c-4.188,0-7.2,2.094-7.2,5.11,0,2.262,2.094,3.435,3.77,4.188s2.178,1.257,2.178,1.927c0,1.005-1.34,1.508-2.513,1.508a9.105,9.105,0,0,1-4.021-.838l-.586-.251L248,190.679a13.583,13.583,0,0,0,4.775.838c4.44,0,7.372-2.094,7.372-5.277,0-1.759-1.089-3.1-3.6-4.188-1.508-.754-2.429-1.173-2.429-1.927,0-.67.754-1.34,2.429-1.34a7.684,7.684,0,0,1,3.183.586l.419.168.67-3.267Z" transform="translate(-222.031 -175.6)"/><path class="b" d="M260.817,176.27a10.625,10.625,0,0,0-3.853-.67c-4.188,0-6.45,2.094-6.45,5.11,0,2.262,1.34,3.435,3.016,4.188s2.178,1.257,2.178,1.927c0,1.005-1.34,1.508-2.513,1.508a9.105,9.105,0,0,1-4.021-.838l-.586-.251L248,190.679a13.583,13.583,0,0,0,4.775.838c4.44,0,7.372-2.094,7.372-5.277,0-1.759-1.089-3.1-3.6-4.188-1.508-.754-2.429-1.173-2.429-1.927,0-.67.754-1.34,2.429-1.34a7.684,7.684,0,0,1,3.183.586l.419.168.67-3.267Z" transform="translate(-222.031 -175.6)"/><path class="a" d="M366.861,180.4c-1.005,0-1.759.084-2.178,1.089l-6.283,13.99h4.524l.838-2.513h5.361l.5,2.513h4.021L370.128,180.4Zm-1.927,10.052c.251-.754,1.675-4.44,1.675-4.44s.335-.921.586-1.508l.251,1.424s.838,3.77,1.005,4.607h-3.518Z" transform="translate(-320.871 -179.897)"/><path class="b" d="M367.866,180.4c-1.005,0-1.759.084-2.178,1.089l-7.288,13.99h4.524l.838-2.513h5.361l.5,2.513h4.021L370.128,180.4Zm-2.932,10.052c.335-.838,1.675-4.44,1.675-4.44s.335-.921.586-1.508l.251,1.424s.838,3.77,1.005,4.607h-3.518Z" transform="translate(-320.871 -179.897)"/><path class="a" d="M57.483,191.671l-.419-2.178a12.143,12.143,0,0,0-5.864-6.618l3.77,13.4h4.524L66.279,181.2H61.755Z" transform="translate(-45.839 -180.614)"/><path class="b" d="M57.483,191.671l-.419-2.178a12.143,12.143,0,0,0-5.864-6.618l3.77,13.4h4.524L66.279,181.2H62.593Z" transform="translate(-45.839 -180.614)"/><path class="c" d="M0,180.4l.754.168c5.361,1.257,9.047,4.44,10.471,8.209l-1.508-7.12c-.251-1.005-1.005-1.257-1.927-1.257Z" transform="translate(0 -179.897)"/><path class="d" d="M0,180.4H0c5.361,1.257,9.8,4.524,11.225,8.293L9.8,182.746a2.045,2.045,0,0,0-2.01-1.592Z" transform="translate(0 -179.897)"/><path class="e" d="M0,180.4H0c5.361,1.257,9.8,4.524,11.225,8.293l-1.005-3.267A2.954,2.954,0,0,0,8.461,183Z" transform="translate(0 -179.897)"/><g transform="translate(5.445 2.178)"><path class="f" d="M62.387,204.777l-2.848-2.848-1.34,3.183-.335-2.094A12.143,12.143,0,0,0,52,196.4l3.77,13.4h4.524Z" transform="translate(-52 -196.4)"/><path class="f" d="M189.072,292.886l-3.6-3.686-.67,3.686Z" transform="translate(-170.894 -279.483)"/><path class="f" d="M255.288,274.8h0c.335.335.5.586.419.921,0,1.005-1.34,1.508-2.513,1.508a9.1,9.1,0,0,1-4.021-.838l-.586-.251L248,279.575a13.585,13.585,0,0,0,4.775.838c2.681,0,4.859-.754,6.115-2.094Z" transform="translate(-227.476 -266.591)"/><path class="f" d="M364,230.574h3.937l.838-2.513h5.361l.5,2.513h4.021l-1.424-6.115-5.026-4.859.251,1.34s.838,3.77,1.005,4.607h-3.518c.335-.838,1.675-4.44,1.675-4.44s.335-.922.586-1.508" transform="translate(-331.33 -217.171)"/></g></svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
